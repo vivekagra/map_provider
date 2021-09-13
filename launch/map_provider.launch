@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
 <launch>
-	<arg name="map_file" default="$(find map_provider)/maps/map.yaml"/>
+	<arg name="map_file" default="$(find map_provider)/maps/my_map.yaml"/>
 	<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
 </launch>
